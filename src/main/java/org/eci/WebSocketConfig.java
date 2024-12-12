@@ -20,7 +20,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws") // Cambia "/wss" por "/ws" (más estándar)
-                .setAllowedOriginPatterns("http://localhost:3000") // Reemplaza por tu dominio
+                .setAllowedOriginPatterns("http://ec2-100-24-64-90.compute-1.amazonaws.com/ws") // Reemplaza por tu dominio
                 .withSockJS(); // Habilita soporte para SockJS
     }
 }
